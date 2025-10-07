@@ -10,22 +10,22 @@ public class LinkedListPoo {
         // Operações de Inserção
         System.out.println("\nInserção");
         lista.addFirst("Elemento A");
-        System.out.println("Após addFirst" + lista);
+        System.out.println("Após addFirst do Elemento A" + lista);
 
         lista.addLast("Elemento C");
-        System.out.println("Após addLast"+ lista);
+        System.out.println("Após addLast do Elemento C"+ lista);
 
         lista.add(1, "Elemento B");
-        System.out.println("Após add" + lista);
+        System.out.println("Após add do Elemento B" + lista);
 
         lista.add("Elemento D");
-        System.out.println("Após add" + lista);
+        System.out.println("Após add do Elemento D" + lista);
 
         // Operação de percorrer
         System.out.println("\nPercorrer");
         System.out.print("Percorrendo a lista: ");
         for (String item : lista) {
-            System.out.print(item + " ");
+            System.out.print(item + ", ");
         }
         System.out.println();
 
@@ -34,10 +34,10 @@ public class LinkedListPoo {
         String elementoProcurado = "Elemento B";
         int indice = lista.indexOf(elementoProcurado);
         if (indice != -1) {
-            System.out.println("\"" + elementoProcurado + "\" encontrado no índice: " + indice);
+            System.out.println(elementoProcurado + " encontrado no índice: " + indice);
             System.out.println("Elemento no índice 0: " + lista.get(0));
         } else {
-            System.out.println("\"" + elementoProcurado + "\" não encontrado.");
+            System.out.println(elementoProcurado + " não encontrado.");
         }
 
         // Operações de Remoção
@@ -49,7 +49,7 @@ public class LinkedListPoo {
         System.out.println("Após removeLast(): " + lista);
 
         lista.remove("Elemento B");
-        System.out.println("Após remove(\"Elemento B\"): " + lista);
+        System.out.println("Após remove do Elemento B: " + lista);
 
         if (!lista.isEmpty()) {
             lista.remove(0);
